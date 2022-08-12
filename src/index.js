@@ -6,15 +6,23 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const theme = createTheme({
+export const theme = createTheme({
     typography: {
         fontFamily: ['Cormorant Garamond', 'Open Sans'],
         h1: {fontFamily: 'Cormorant Garamond'},
         h2: {fontFamily: 'Cormorant Garamond'},
         h3: {fontFamily: 'Cormorant Garamond'},
         h4: {fontFamily: 'Cormorant Garamond'},
-
-    }
+    },
+    palette: {
+        primary: {
+            main: '#000',
+            light: '#949799'
+        },
+        secondary: {
+            main: "#fff"
+        }
+    },
 });
 
 root.render(<React.StrictMode>
